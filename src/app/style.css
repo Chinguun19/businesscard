@@ -1,13 +1,201 @@
-.card {
+.cardcontainer {
     margin-left: 20vh;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    right: 1000px;
+}
+
+
+.cardBackContainer {
+    top: 1px;
+    position: absolute;
+    display: block;
+ 
+}
+
+
+.cardBack {
+   
+    margin-left: 150vh;
+    position: relative;
     width: 672px;
     height: 384px;
     border-radius: 20px;
     background-color: white;
     margin-top: 100px;
-    background-image: url('/public/Shape\ \(2\).png');
-    background-size: cover
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+
+.cardFront {
+ 
+    position: relative;
+    margin-left: 70vh;
+    width: 672px;
+    height: 384px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
+    box-sizing: border-box;
 }
 body {
-    background-color: aqua;
+    background-color: #C4A484;
+}
+.Name {
+    width: 500px;
+    position: absolute;
+    top: 50px;
+    left: 54px;
+    font-size: 28px;
+    font-family: Syne;
+    font-weight: 700;
+}
+.lastName {
+  color: orange;
+}
+.firstName{
+    color: #0071BC
+
+}
+.phoneNumber {
+    position: absolute;
+    top: 237px;
+    left: 80px;
+    font: Inter;
+    font-weight: 300px;
+    size: 16px;
+    line-height: 9.68px;
+    color: black;
+}
+.email {
+    position: absolute;
+    top: 267px;
+    left: 80px;
+    font: Inter;
+    font-weight: 300px;
+    size: 16px;
+    line-height: 9.68px;
+    color: black;
+
+}
+.address {
+    position: absolute;
+    top: 296px;
+    left: 80px;
+    font: Inter;
+    font-weight: 300px;
+    size: 16px;
+    line-height: 9.68px;
+    color: #000000;
+
+}
+.cardimage {
+    position: absolute;
+    width: 326px;
+    height: 384px;
+    left: 350px;
+}
+
+.background {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    position: relative;
+    width: 291px;
+    height: 384px;
+    margin-left: 385px;
+    background-color: transparent;
+}
+
+.Vector8 {
+    position: absolute;
+    width: 57.3px;
+    height: 384px;
+    left: 350px;
+}
+.Vector9 {
+    position: absolute;
+    width: 62px;
+    height: 384px;
+    left: 358px;
+}
+.Vector10 {
+    position: absolute;
+    width: 62px;
+    height: 384px;
+    left: 366px;
+}
+.Vector12 {
+    position: absolute;
+    width: 302px;
+    height: 384px;
+    left: 374px;
+    color: #141714;
+}
+.companyLogo {
+    width: 65px;
+    height: 65px;
+    z-index: 10;
+    margin-top: 50px;
+}
+.phone {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 232px;
+    left: 50px;
+
+}
+.mail {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 262px;
+    left: 51px;
+
+}
+.location {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 292px;
+    left: 51px;
+    padding: 1.19px 2.14px 1.17px 2.14px;
+
+}
+.companyName {
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;  /* Centers the text */
+    margin-top: 120px;
+}
+.profession {
+    font-family: Montserrat;
+    position: absolute;
+    top: 88px;
+    left: 54px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.tagLine {
+    position: absolute;
+    font-family: Montserrat;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 160px;
+    font-weight: 100;
+}
+.qr {
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    top: 250px;
+
 }

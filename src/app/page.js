@@ -1,6 +1,24 @@
+"use client"
+
+
 import "./style.css";
+import WebFont from 'webfontloader';
 
 export default function Home() {
+
+  const App = () => {
+    useEffect(() => {
+        WebFont.load({
+            google: {
+                families: [
+                    'Montserrat:ital,wght@0,100..900;1,100..900',
+                    'Syne:wght@400..800',
+                ],
+            },
+        });
+    }, []);
+
+  }
   const cardInfo = [
     { id: 1, firstName: "Marian", lastName: "Dixsee", email: "mdixsee0@nba.com", companyName: "Blogtags", phoneNumber: "412-530-2249", address: "62 Meadow Ridge Plaza" },
     { id: 2, firstName: "Coleman", lastName: "Oxbie", email: "coxbie1@oaic.gov.au", companyName: "Fatz", phoneNumber: "592-295-2012", address: "18 Macpherson Place" },
@@ -15,17 +33,42 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <div className="cardcontainer">
       {cardInfo.map((person) => (
-        <div 
-          className="card" 
-          key={person.id}
-        >
-          <div>{person.firstName}</div>
-          <div>{person.lastName}</div>
-          <div>{person.email}</div>
+        <div className="cardFront" key={person.id}>
+          <img src="phone.png" className="phone"/>
+          <img src="location2.png" className="location"/>
+          <img src="mail.png" className="mail"/>
+          <img src="background.png"  className="cardimage"  />
+          <div className="background"> <div className="companyName">{person.companyName}</div>
+          <div className="tagLine">Tag Line Goes Here</div> <img src="logo2.png" className="companyLogo"/> <img src="QR.png" className="qr"/> </div>
+
+          <div className="Name"><span className="firstName">{person.firstName}</span> <span className="lastName">{person.lastName}</span></div>
+          <div className="profession">Designer</div>
+          <div className="phoneNumber">{person.phoneNumber}</div>
+          <div className="email">{person.email}</div>
+          <div className="address">{person.address}</div>
         </div>
+      
       ))}
+      <div className="cardBackContainer">
+          {cardInfo.map((person) => (
+        <div className="cardBack" key={person.id}>
+          <img src="background.png"  className="cardimage"  />
+          <div className="background"> <div className="companyName">{person.companyName}</div>
+          <div className="tagLine">Tag Line Goes Here</div> <img src="logo2.png" className="companyLogo"/> <img src="QR.png" className="qr"/> </div>
+
+          <div className="Name"><span className="firstName">{person.firstName}dd</span> <span className="lastName">{person.lastName}</span></div>
+          <div className="profession">Designer</div>
+          <div className="phoneNumber">{person.phoneNumber}</div>
+          <div className="email">{person.email}</div>
+          <div className="address">{person.address}</div>
+        </div>
+      
+      ))}
+      </div>
+      
+      
     </div>
   );
 }
