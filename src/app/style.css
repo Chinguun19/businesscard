@@ -1,3 +1,11 @@
+.allCardContainer {
+    justify-content: center;
+
+
+}
+
+
+
 .cardcontainer {
     margin-left: 20vh;
     display: block;
@@ -11,6 +19,7 @@
     top: 1px;
     position: absolute;
     display: block;
+    right: 200px;
  
 }
 
@@ -22,11 +31,18 @@
     width: 672px;
     height: 384px;
     border-radius: 20px;
-    background-color: white;
+    background-color: #141717;
     margin-top: 100px;
     display: flex;
     box-sizing: border-box;
 
+}
+.cardBackBackground {
+    position: absolute;
+    width: 674px;
+    height: 66px;
+    top: 317.5px;
+    border-radius: 20px;
 }
 
 
@@ -109,6 +125,16 @@ body {
     margin-left: 385px;
     background-color: transparent;
 }
+.Backbackground {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 672px;
+    height: 384px;
+    border-radius: 20px;
+    
+
+}
 
 .Vector8 {
     position: absolute;
@@ -141,6 +167,11 @@ body {
     z-index: 10;
     margin-top: 50px;
 }
+.backCompanyLogo {
+    width: 82px;
+    height: 82px;
+    margin-top: 72px;
+}
 .phone {
     position: absolute;
     width: 20px;
@@ -172,8 +203,18 @@ body {
     font-size: 30px;
     font-weight: 600;
     color: #ffffff;
-    text-align: center;  /* Centers the text */
+    text-align: center; 
     margin-top: 120px;
+
+}
+.backCompanyName {
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;  
+    top: 170px;
 }
 .profession {
     font-family: Montserrat;
@@ -181,16 +222,28 @@ body {
     top: 88px;
     left: 54px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     color: #000000;
 }
 .tagLine {
     position: absolute;
-    font-family: Montserrat;
+    font-family: League Spartan;
     color: #ffffff;
     text-align: center;
     margin-top: 160px;
+    font-weight: 400run;
+}
+.backTagLine {
+    width: 200px;
+    height: 16px;
+    font-size: 20px;
+    position: absolute;
+    font-family: League Spartan;
+    color: whitesmoke;
+    text-align: center;
+    top: 218px;
     font-weight: 100;
+
 }
 .qr {
     position: absolute;
@@ -198,4 +251,128 @@ body {
     height: 84px;
     top: 250px;
 
+}
+
+/* Media query for 27-inch iMac screens (around 5120px width) */
+@media (min-width: 2560px) and (max-width: 5120px) {
+    .allCardContainer {
+        display: flex;               /* Use flexbox to control layout */
+        flex-direction: column;      /* Stack the cards vertically */
+        justify-content: center;     /* Center the cards vertically */
+        align-items: center;         /* Center the cards horizontally */
+        margin: 0 auto;              /* Automatically center the container */
+        position: relative;
+        width: 100%;
+        height: 100%;                /* Ensure it takes up the full height */
+    }
+
+
+    .cardcontainer {
+        height: 100%;
+    }
+
+    .cardBack, .cardFront {
+        width: 672px;
+        height: 384px;
+        margin: 20px 0;              /* Add some space between the cards */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .Name {
+        font-size: 28px;
+        font-family: Syne;
+        font-weight: 700;
+        width: 500px;
+        position: absolute;
+        top: 50px;
+        left: 54px;  /* Keep left margin for text alignment */
+    }
+
+    .phoneNumber, .email, .address {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: black;
+    }
+
+    .phoneNumber {
+        top: 237px;
+        left: 80px; /* Adjusted left position */
+    }
+
+    .email {
+        top: 267px;
+        left: 80px; /* Adjusted left position */
+    }
+
+    .address {
+        top: 296px;
+        left: 80px; /* Adjusted left position */
+    }
+
+    .companyName {
+        font-size: 30px;
+        font-weight: 600;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 120px;
+    }
+
+    .backCompanyName {
+        font-size: 35px;
+        font-weight: 600;
+        color: #ffffff;
+        text-align: center;
+        top: 170px;
+    }
+
+    .qr {
+        position: absolute;
+        width: 84px;
+        height: 84px;
+        top: 250px;
+    }
+
+    .companyLogo {
+        width: 65px;
+        height: 65px;
+        z-index: 10;
+        margin-top: 50px;
+    }
+
+    .backCompanyLogo {
+        width: 82px;
+        height: 82px;
+        margin-top: 72px;
+    }
+
+    /* Adjust the background and vector icons to fit better */
+    .Vector8, .Vector9, .Vector10 {
+        position: absolute;
+        width: 57.3px;
+        height: 384px;
+        left: 350px;
+    }
+
+    .background {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 672px;
+        height: 384px;
+        background-color: transparent;
+    }
+
+    .Backbackground {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 672px;
+        height: 384px;
+        border-radius: 20px;
+    }
 }
