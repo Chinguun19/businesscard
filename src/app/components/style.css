@@ -1,13 +1,11 @@
 .allCardContainer {
-    justify-content: center;
-
-
+    width: 100vh; 
 }
 
 
 
 .cardcontainer {
-    margin-left: 20vh;
+    margin-left: 200vh;
     display: block;
     position: absolute;
     justify-content: center;
@@ -47,7 +45,7 @@
 
 
 .cardFront {
- 
+  
     position: relative;
     margin-left: 70vh;
     width: 672px;
@@ -253,28 +251,23 @@ body {
 
 }
 
-/* Media query for 27-inch iMac screens (around 5120px width) */
 @media (min-width: 2560px) and (max-width: 5120px) {
     .allCardContainer {
-        display: flex;               /* Use flexbox to control layout */
-        flex-direction: column;      /* Stack the cards vertically */
-        justify-content: center;     /* Center the cards vertically */
-        align-items: center;         /* Center the cards horizontally */
-        margin: 0 auto;              /* Automatically center the container */
-        position: relative;
-        width: 100%;
-        height: 100%;                /* Ensure it takes up the full height */
+        justify-content: space-between;
     }
-
-
     .cardcontainer {
+        position: relative;
+        margin-right: 2000px;
         height: 100%;
+    }
+    .cardBackContainer {
+        justify-content: center;
     }
 
     .cardBack, .cardFront {
         width: 672px;
         height: 384px;
-        margin: 20px 0;              /* Add some space between the cards */
+        margin: 20px 0;             
         display: flex;
         justify-content: center;
         align-items: center;
@@ -288,7 +281,7 @@ body {
         width: 500px;
         position: absolute;
         top: 50px;
-        left: 54px;  /* Keep left margin for text alignment */
+        left: 54px;  
     }
 
     .phoneNumber, .email, .address {
@@ -301,17 +294,17 @@ body {
 
     .phoneNumber {
         top: 237px;
-        left: 80px; /* Adjusted left position */
+        left: 80px; 
     }
 
     .email {
         top: 267px;
-        left: 80px; /* Adjusted left position */
+        left: 80px; 
     }
 
     .address {
         top: 296px;
-        left: 80px; /* Adjusted left position */
+        left: 80px; 
     }
 
     .companyName {
@@ -350,7 +343,7 @@ body {
         margin-top: 72px;
     }
 
-    /* Adjust the background and vector icons to fit better */
+
     .Vector8, .Vector9, .Vector10 {
         position: absolute;
         width: 57.3px;

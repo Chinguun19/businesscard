@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",  // Ensure baseUrl is set to the root of the project
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/app/*"]  // Alias @ maps to src/app directory
     }
   }
 }
