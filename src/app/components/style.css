@@ -12,7 +12,6 @@
     right: 1000px;
 }
 
-
 .cardBackContainer {
     top: 1px;
     position: absolute;
@@ -23,14 +22,14 @@
 
 
 .cardBack {
-   
-    margin-left: 150vh;
+   margin-bottom: 0px;
+    margin-left: 700px;
     position: relative;
     width: 672px;
     height: 384px;
     border-radius: 20px;
     background-color: #141717;
-    margin-top: 100px;
+    margin-top: 0px;
     display: flex;
     box-sizing: border-box;
 
@@ -253,6 +252,8 @@ body {
 
 @media (min-width: 2560px) and (max-width: 5120px) {
     .allCardContainer {
+        display: block;
+
         justify-content: space-between;
     }
     .cardcontainer {
