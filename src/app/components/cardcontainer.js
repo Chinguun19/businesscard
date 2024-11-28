@@ -9,9 +9,9 @@ import './style.css';
 const CardContainer = ({ data }) => {
   console.log(data)
   return (
-  <div className="allCardContainer"> 
+  <div className="cardsContainer"> 
       {data.map((person) => (
-        <div key={person.id}>
+        <div className="cardContainer" key={person.id}>
           <CardFront person={person}> </CardFront>
            <CardBack person={person}></CardBack>
         </div> 

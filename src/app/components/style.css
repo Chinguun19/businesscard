@@ -2,9 +2,12 @@
     width: 100vh; 
 }
 
-
+.cardsContainer {
+    justify-content: center;
+}
 
 .cardcontainer {
+    justify-content: center;
     margin-left: 200vh;
     display: block;
     position: absolute;
@@ -13,6 +16,7 @@
 }
 
 .cardBackContainer {
+    justify-content: center;
     top: 1px;
     position: absolute;
     display: block;
@@ -22,8 +26,8 @@
 
 
 .cardBack {
-   margin-bottom: 0px;
-    margin-left: 700px;
+    margin-bottom: 20px;
+    margin-left: 750px;
     position: relative;
     width: 672px;
     height: 384px;
@@ -51,9 +55,9 @@
     height: 384px;
     border-radius: 20px;
     background-color: white;
-    margin-top: 100px;
     display: flex;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 body {
     background-color: #C4A484;
@@ -253,7 +257,6 @@ body {
 @media (min-width: 2560px) and (max-width: 5120px) {
     .allCardContainer {
         display: block;
-
         justify-content: space-between;
     }
     .cardcontainer {
@@ -268,7 +271,7 @@ body {
     .cardBack, .cardFront {
         width: 672px;
         height: 384px;
-        margin: 20px 0;             
+        margin: 200px;             
         display: flex;
         justify-content: center;
         align-items: center;
