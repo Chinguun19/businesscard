@@ -2,10 +2,10 @@
 
 import React, { useEffect } from "react";
 import WebFont from "webfontloader";
-import data from './USERS.json';  // Correct if USERS.json is in the same folder as page.js
+import data from './USERS.json'; 
 
 
-import CardContainer from './components/cardcontainer'; // Correct relative path
+import CardContainer from './components/cardcontainer'; 
 
 
 export default function Home() {
@@ -19,7 +19,6 @@ export default function Home() {
         ],
       },
     });
-    console.log(data);  // Check if data is being loaded correctly
   }, []);
 
   return (
